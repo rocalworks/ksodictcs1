@@ -1,0 +1,190 @@
+.contact-btn {
+    background-color: black !important;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.b-divider {
+    margin-bottom: 10px;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+/*** CV BANNER ***/
+.site-banner {
+    background-color: black;
+}
+
+.site-banner::before {
+    content: "";
+    background-image: url('../../assets/images/woman-bg.jpg');
+    background-size: cover;
+    object-fit: contain;
+    object-position: 0% 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.banner-black-bg, .banner-details, .mouse-scroll {
+    position: relative;
+}
+
+.banner-black-bg {
+    height: 200px;
+    background-color: black;
+}
+
+.banner-black-bg > img {
+    height: 250px;
+    margin-top: 64px;
+    border-radius: 50%;
+}
+
+.banner-details {
+    margin-top: 125px;
+    color: white;
+}
+
+/* Mouse scroll */
+/* (Source: https://codepen.io/Ioana/pen/rNZOYw) */
+.mouse-arrow > span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 6px;
+}
+
+.unu {
+  margin-top: 6px;
+}
+
+.unu, .doi, .trei {
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.doi {
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+
+.trei {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouse
+{
+height: 21px;
+width: 14px;
+  border-radius: 10px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+/*** SKILLS ***/
+.skills-banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+/*** TRAININGS ***/
+.training-info {
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 1.5em;
+}
